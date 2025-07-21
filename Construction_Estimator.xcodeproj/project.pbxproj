@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		EDA969BB2E2E5A1400034610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA969A32E2E5A1100034610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA969AA2E2E5A1100034610;
+			remoteInfo = Construction_Estimator;
+		};
+		EDA969C52E2E5A1400034610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDA969A32E2E5A1100034610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDA969AA2E2E5A1100034610;
+			remoteInfo = Construction_Estimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDA969AB2E2E5A1100034610 /* Construction_Estimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Construction_Estimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA969BA2E2E5A1400034610 /* Construction_EstimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Construction_EstimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDA969C42E2E5A1400034610 /* Construction_EstimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Construction_EstimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EDA969AD2E2E5A1100034610 /* Construction_Estimator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Construction_Estimator;
+			sourceTree = "<group>";
+		};
+		EDA969BD2E2E5A1400034610 /* Construction_EstimatorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Construction_EstimatorTests;
+			sourceTree = "<group>";
+		};
+		EDA969C72E2E5A1400034610 /* Construction_EstimatorUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Construction_EstimatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDA969A82E2E5A1100034610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969B72E2E5A1400034610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969C12E2E5A1400034610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDA969A22E2E5A1100034610 = {
+			isa = PBXGroup;
+			children = (
+				EDA969AD2E2E5A1100034610 /* Construction_Estimator */,
+				EDA969BD2E2E5A1400034610 /* Construction_EstimatorTests */,
+				EDA969C72E2E5A1400034610 /* Construction_EstimatorUITests */,
+				EDA969AC2E2E5A1100034610 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDA969AC2E2E5A1100034610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDA969AB2E2E5A1100034610 /* Construction_Estimator.app */,
+				EDA969BA2E2E5A1400034610 /* Construction_EstimatorTests.xctest */,
+				EDA969C42E2E5A1400034610 /* Construction_EstimatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDA969AA2E2E5A1100034610 /* Construction_Estimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA969CE2E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_Estimator" */;
+			buildPhases = (
+				EDA969A72E2E5A1100034610 /* Sources */,
+				EDA969A82E2E5A1100034610 /* Frameworks */,
+				EDA969A92E2E5A1100034610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EDA969AD2E2E5A1100034610 /* Construction_Estimator */,
+			);
+			name = Construction_Estimator;
+			packageProductDependencies = (
+			);
+			productName = Construction_Estimator;
+			productReference = EDA969AB2E2E5A1100034610 /* Construction_Estimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDA969B92E2E5A1400034610 /* Construction_EstimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA969D12E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_EstimatorTests" */;
+			buildPhases = (
+				EDA969B62E2E5A1400034610 /* Sources */,
+				EDA969B72E2E5A1400034610 /* Frameworks */,
+				EDA969B82E2E5A1400034610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA969BC2E2E5A1400034610 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EDA969BD2E2E5A1400034610 /* Construction_EstimatorTests */,
+			);
+			name = Construction_EstimatorTests;
+			packageProductDependencies = (
+			);
+			productName = Construction_EstimatorTests;
+			productReference = EDA969BA2E2E5A1400034610 /* Construction_EstimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDA969C32E2E5A1400034610 /* Construction_EstimatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDA969D42E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_EstimatorUITests" */;
+			buildPhases = (
+				EDA969C02E2E5A1400034610 /* Sources */,
+				EDA969C12E2E5A1400034610 /* Frameworks */,
+				EDA969C22E2E5A1400034610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA969C62E2E5A1400034610 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EDA969C72E2E5A1400034610 /* Construction_EstimatorUITests */,
+			);
+			name = Construction_EstimatorUITests;
+			packageProductDependencies = (
+			);
+			productName = Construction_EstimatorUITests;
+			productReference = EDA969C42E2E5A1400034610 /* Construction_EstimatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDA969A32E2E5A1100034610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					EDA969AA2E2E5A1100034610 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					EDA969B92E2E5A1400034610 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EDA969AA2E2E5A1100034610;
+					};
+					EDA969C32E2E5A1400034610 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = EDA969AA2E2E5A1100034610;
+					};
+				};
+			};
+			buildConfigurationList = EDA969A62E2E5A1100034610 /* Build configuration list for PBXProject "Construction_Estimator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDA969A22E2E5A1100034610;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EDA969AC2E2E5A1100034610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDA969AA2E2E5A1100034610 /* Construction_Estimator */,
+				EDA969B92E2E5A1400034610 /* Construction_EstimatorTests */,
+				EDA969C32E2E5A1400034610 /* Construction_EstimatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDA969A92E2E5A1100034610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969B82E2E5A1400034610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969C22E2E5A1400034610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDA969A72E2E5A1100034610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969B62E2E5A1400034610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA969C02E2E5A1400034610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDA969BC2E2E5A1400034610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA969AA2E2E5A1100034610 /* Construction_Estimator */;
+			targetProxy = EDA969BB2E2E5A1400034610 /* PBXContainerItemProxy */;
+		};
+		EDA969C62E2E5A1400034610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDA969AA2E2E5A1100034610 /* Construction_Estimator */;
+			targetProxy = EDA969C52E2E5A1400034610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EDA969CC2E2E5A1400034610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDA969CD2E2E5A1400034610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDA969CF2E2E5A1400034610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-Estimator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDA969D02E2E5A1400034610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-Estimator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDA969D22E2E5A1400034610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-EstimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Construction_Estimator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Construction_Estimator";
+			};
+			name = Debug;
+		};
+		EDA969D32E2E5A1400034610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-EstimatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Construction_Estimator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Construction_Estimator";
+			};
+			name = Release;
+		};
+		EDA969D52E2E5A1400034610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-EstimatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Construction_Estimator;
+			};
+			name = Debug;
+		};
+		EDA969D62E2E5A1400034610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43RR996G2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waseem.Construction-EstimatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Construction_Estimator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDA969A62E2E5A1100034610 /* Build configuration list for PBXProject "Construction_Estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA969CC2E2E5A1400034610 /* Debug */,
+				EDA969CD2E2E5A1400034610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA969CE2E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_Estimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA969CF2E2E5A1400034610 /* Debug */,
+				EDA969D02E2E5A1400034610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA969D12E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_EstimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA969D22E2E5A1400034610 /* Debug */,
+				EDA969D32E2E5A1400034610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDA969D42E2E5A1400034610 /* Build configuration list for PBXNativeTarget "Construction_EstimatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA969D52E2E5A1400034610 /* Debug */,
+				EDA969D62E2E5A1400034610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDA969A32E2E5A1100034610 /* Project object */;
+}
