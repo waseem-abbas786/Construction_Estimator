@@ -1,26 +1,29 @@
 
 import Foundation
 class FloorViewModel: ObservableObject {
-   @Published var floor = FloorModel(length: 0, width: 0)
+  @Published var currentFloor = FloorModel(length: 0, width: 0)
+    @Published var floors : [FloorModel] = []
     @Published var cementPrice : Double = 0
-    @Published var sandPricepertwoHundredsq : Double = 0
+    @Published var sandPricePer200Sq : Double = 0
     @Published var stonePriceperSq : Double = 0
     
-    var area : Double {
-        floor.length * floor.width
+    func addCurrentFloor () {
+        floors.append(currentFloor)
+        currentFloor = FloorModel(length: 0, width: 0)
     }
-    var cementBags : Double {
-        area / 28
+    var totalCementBags : Double {
+        floors.reduce(0) {$0 + $1.cementBags}
     }
-    var sand : Double {
-        cementBags * 12
+    var totalSand : Double {
+        floors.reduce(0) {$0 + $1.sand}
     }
-    var stone : Double {
-        cementBags * 12
+    var totalStone  : Double {
+        floors.reduce(0) {$0 + $1.stone}
     }
     var totalCost : Double {
-        let sandCost = Double(sand / 200) * sandPricepertwoHundredsq
-        return (cementBags * cementPrice) + (sand * sandCost) + (stone * stonePriceperSq)
+        floors.reduce(0) {
+            $0 + $1.cost(cementPrice: cementPrice, sandPriceper200Sq: sandPricePer200Sq, stonePrice: stonePriceperSq)
+        }
     }
-    }
+}
 

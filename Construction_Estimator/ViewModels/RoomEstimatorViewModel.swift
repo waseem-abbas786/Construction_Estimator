@@ -7,32 +7,46 @@
 
 import Foundation
 class RoomEstimatorViewModel : ObservableObject {
-    @Published var room = Room(lenght: 0, width: 0, height: 0, wallType: .nineInch)
+    @Published var rooms: [Room] = []
+    @Published var currentRoom = Room(lenght: 0, width: 0, height: 0, wallType: .nineInch)
     
     @Published var bricksPricePerThousand : Double = 0
     @Published var cementPrice : Double = 0
-    @Published var sandPricePertwoHundredSq : Double = 0
+    @Published var sandPricePer200Sq : Double = 0
+    func addCurrentRoom () {
+        rooms.append(currentRoom)
+        currentRoom = Room(lenght: 0, width: 0, height: 0, wallType: .nineInch)
+    }
     
-    var wallAerea : Double {
-        2 * ((room.lenght + room.width) * room.height)
-    }
-    var bricksCount : Int {
-        Int((wallAerea / 100) * Double(room.wallType.bricksPer100sqft))
-    }
-    var cementBagsWall : Double {
-        (wallAerea / 100) * 1.25
-    }
-    var plasterCementBags : Double {
-        (wallAerea / 100) * 3
-    }
-    var sand : Double {
-        wallAerea * 0.37
-    }
     var totalCost : Double {
-        let brickCost = (Double(bricksCount) / 1000) * bricksPricePerThousand
-        let wallCementCost = cementBagsWall * cementPrice
-        let plasterCementCost = plasterCementBags * cementPrice
-        let sandCost = Double(sand / 200) * sandPricePertwoHundredSq
-        return brickCost + wallCementCost + plasterCementCost + sandCost
+        rooms.reduce(0) { partialResult, room in
+            partialResult + room.estimateCost(bricksPerThousand: bricksPricePerThousand, cementPrice: cementPrice, sandPricePer200Sq: sandPricePer200Sq)
+        }
     }
+    var totalWallArea : Double {
+        rooms.reduce(0) { $0 + $1.wallArea()
+        }
+    }
+    var totalBricks : Int {
+        rooms.reduce(0) { $0 + Int(($1.wallArea() / 100) * Double($1.wallType.bricksPer100sqft))
+        }
+    }
+    var totalCementBags : Double {
+        rooms.reduce(0) { result, room in
+            let area = room.wallArea()
+            return result + ((area / 100) * (1.25 + 3))
+        }
+    }
+    var totalSand : Double {
+        rooms.reduce(0) {$0 + ($1.wallArea() * 0.37) }
+    }
+    var isCurrentRoomValid: Bool {
+        currentRoom.lenght > 0 &&
+        currentRoom.width > 0 &&
+        currentRoom.height > 0 &&
+        bricksPricePerThousand > 0 &&
+        cementPrice > 0 &&
+        sandPricePer200Sq > 0
+    }
+
 }
