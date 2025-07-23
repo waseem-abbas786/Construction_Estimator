@@ -12,7 +12,7 @@ class FloorViewModel: ObservableObject {
         currentFloor = FloorModel(length: 0, width: 0)
     }
     var totalCementBags : Double {
-        floors.reduce(0) {$0 + $1.cementBags}
+        floors.reduce(0, {$0 + $1.cementBags})
     }
     var totalSand : Double {
         floors.reduce(0) {$0 + $1.sand}
@@ -22,8 +22,15 @@ class FloorViewModel: ObservableObject {
     }
     var totalCost : Double {
         floors.reduce(0) {
-            $0 + $1.cost(cementPrice: cementPrice, sandPriceper200Sq: sandPricePer200Sq, stonePrice: stonePriceperSq)
+            $0 + $1.estmatedCost(cementPrice: cementPrice, sandPriceper200Sq: sandPricePer200Sq, stonePrice: stonePriceperSq)
         }
+    }
+    var isFloorIsValid : Bool {
+        currentFloor.length > 0 &&
+        currentFloor.width > 0 &&
+        cementPrice > 0 &&
+        sandPricePer200Sq > 00 &&
+        stonePriceperSq > 0
     }
 }
 

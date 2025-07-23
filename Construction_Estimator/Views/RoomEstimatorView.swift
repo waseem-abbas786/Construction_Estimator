@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RoomEstimatorView: View {
-    @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel = RoomEstimatorViewModel()
     @State var showSummary : Bool = false
     var body: some View {
