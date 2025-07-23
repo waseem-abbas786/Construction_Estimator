@@ -29,3 +29,12 @@ A simple yet powerful iOS app built with **SwiftUI** and **MVVM architecture** t
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/ConstructionEstimator.git
+## 📸 Screenshots
+
+### Home Screen<img width="429" height="930" alt="Screenshot 2025-07-23 at 12 56 31 AM" src="https://github.com/user-attachments/assets/12fd32bb-e112-428c-978e-c6aa7da03b4c" />
+
+![Home Screen](Screen<img width="438" height="912" alt="Screenshot 2025-07-23 at 12 57 58 AM" src="https://github.com/user-attachments/assets/d34b7ceb-38db-411c-be04-1b48a1ea97d8" />
+shots/home.png)
+
+### Estimate Summary
+![Estimate](Screenshots/estimate.png)
