@@ -25,7 +25,7 @@ struct Construction_EstimatorApp: App {
 
     var body: some Scene {
         WindowGroup {
-         mainView()
+            MainView()
 //            RoomEstimatorView()
         }
         .modelContainer(sharedModelContainer)

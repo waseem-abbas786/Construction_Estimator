@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct mainView: View {
+struct MainView: View {
     @StateObject var roomVM = RoomEstimatorViewModel()
     @StateObject var roofVM = RoofViewModel()
     @StateObject var floorVM = FloorViewModel()
@@ -25,57 +25,34 @@ struct mainView: View {
 
                 Divider()
 
-                VStack(spacing: 12) {
+                VStack(spacing: 16) {
                     if isAnimate {
                         NavigationLink {
                             RoomEstimatorView(viewModel: roomVM)
                         } label: {
-                            HStack {
-                                Image(systemName: "house")
-                                Text("Estimate Room Cost")
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.blue.opacity(0.1))
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
-                            .transition(.move(edge: .leading).combined(with: .opacity))
+                            estimatorButton(icon: "house.fill", text: "Estimate Room Cost", color: .blue)
                         }
+                        .transition(.move(edge: .leading).combined(with: .opacity))
 
                         NavigationLink {
                             RoofEstimatorView(viewModel: roofVM)
                         } label: {
-                            HStack {
-                                Image(systemName: "roof")
-                                Text("Estimate Roof Cost")
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.orange.opacity(0.1))
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
-                            .transition(.move(edge: .leading).combined(with: .opacity))
+                            estimatorButton(icon: "triangle.fill", text: "Estimate Roof Cost", color: .orange)
                         }
+                        .transition(.move(edge: .leading).combined(with: .opacity))
 
                         NavigationLink {
                             FloorEstimatorView(viewModel: floorVM)
                         } label: {
-                            HStack {
-                                Image(systemName: "square.grid.3x3.fill")
-                                Text("Estimate Floor Cost")
-                            }
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .background(Color.green.opacity(0.1))
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
-                            .transition(.move(edge: .leading).combined(with: .opacity))
+                            estimatorButton(icon: "square.grid.3x3.fill", text: "Estimate Floor Cost", color: .green)
                         }
+                        .transition(.move(edge: .leading).combined(with: .opacity))
                     }
                 }
                 .tint(.primary)
-                .animation(.easeOut(duration: 0.4), value: isAnimate)
+                .animation(.easeOut(duration: 0.5), value: isAnimate)
 
                 Divider()
-
-                Group {
                     if totalGrandCost == 0 {
                         RoundedRectangle(cornerRadius: 20)
                             .fill(Color.gray.opacity(0.15))
@@ -97,11 +74,25 @@ struct mainView: View {
                                 .font(.title)
                                 .foregroundColor(.green)
                                 .bold()
+                            Button {
+                                withAnimation {
+                                    roomVM.resetRooms()
+                                    roofVM.reset()
+                                    floorVM.reset()
+                                }
+                            } label: {
+                                Text("Reset All")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.red.opacity(0.15))
+                                    .foregroundColor(.red)
+                                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                            }
+                            .padding(.top, 8)
                         }
                         .transition(.scale.combined(with: .opacity))
+                        .padding(.horizontal)
                     }
-                }
-                .animation(.easeInOut, value: totalGrandCost)
 
                 Spacer()
             }
@@ -114,8 +105,20 @@ struct mainView: View {
             }
         }
     }
+    
+    @ViewBuilder
+    private func estimatorButton(icon: String, text: String, color: Color) -> some View {
+        HStack {
+            Image(systemName: icon)
+            Text(text)
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .background(color.opacity(0.15))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
 }
 
 #Preview {
-    mainView()
+    MainView()
 }
